@@ -1,0 +1,37 @@
+.order-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-page__left {
+    width: 70%;
+}
+
+.order-page__right {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 7px 0;
+}
+
+.order-page__total-price {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.order-page__total-price span,
+.order-page__total-price button {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 954px) {
+    .order-page {
+        flex-direction: column-reverse;
+    }
+    .order-page__right {
+        text-align: end;
+    }
+    .order-page__left {
+        width: 95%;
+    }
+}
